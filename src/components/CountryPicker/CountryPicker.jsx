@@ -20,7 +20,7 @@ const CountryPicker = ({handleCountryChange}) => {
       <NativeSelect defaultValue="" onChange={(e) => {
         handleCountryChange(e.target.value)
       }}>
-        <option value="global">Global</option>
+        <option value="">Global</option>
         {
         fetchedCountries ?
         fetchedCountries.map((country,i) => <option value={country} key={i}>{country}</option>
